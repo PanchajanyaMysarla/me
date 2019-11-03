@@ -1,7 +1,20 @@
 import React from 'react';
+import Paper from '@material-ui/core/Paper';
+import {makeStyles} from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
+const useStyles =  makeStyles(theme =>({
+  root:{
+    padding:theme.spacing(3,2),
+    height:'100%',
+  }
+}));
 export default function About() {
-  return (<div className="About">
+  const classes = useStyles()
+  return (
+
+<Paper className={classes.root}>
+  <div className="About">
   <a href="www.google.com" target="_blank">Resume</a>
     <h2>Panchajanya Mysarla</h2>
     <h3>Work</h3>
@@ -68,5 +81,9 @@ export default function About() {
       <li> Grad -> June 2014</li>
     </ul>
 
-  </div>)
-}
+  </div>
+
+
+</Paper>
+
+)}
