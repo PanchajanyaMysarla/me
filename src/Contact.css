@@ -1,0 +1,11 @@
+.contact{
+  padding-top: 1rem;
+}
+
+.icon-linkedin{
+  padding-right:0.5rem
+}
+
+.icon-linkedin, .icon-github{
+  cursor: pointer;
+}
